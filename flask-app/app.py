@@ -5,18 +5,22 @@ app = Flask(__name__)
 
 # list of cat images
 images = [
-   "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26388-1381844103-11.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr01/15/9/anigif_enhanced-buzz-31540-1381844535-8.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26390-1381844163-18.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/15/10/anigif_enhanced-buzz-1376-1381846217-0.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr03/15/9/anigif_enhanced-buzz-3391-1381844336-26.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/15/10/anigif_enhanced-buzz-29111-1381845968-0.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr03/15/9/anigif_enhanced-buzz-3409-1381844582-13.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr02/15/9/anigif_enhanced-buzz-19667-1381844937-10.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26358-1381845043-13.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-18774-1381844645-6.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/15/9/anigif_enhanced-buzz-25158-1381844793-0.gif",
-    "http://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr03/15/10/anigif_enhanced-buzz-11980-1381846269-1.gif"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/10JUly17.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/11Feb17.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/12Sept16.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/13Jun16.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/14Nov15.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/15Dec14.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/16July14.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/1June19.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/2Feb19.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/3.GIF"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/4Sept18.GIF"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/5.JPG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/6Sept18.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/7.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/8.PNG"
+	"https://imageryapps.s3.us-west-1.amazonaws.com/media/screenshots/imagery/9Nov17.PNG"
     ]
 
 @app.route('/')
