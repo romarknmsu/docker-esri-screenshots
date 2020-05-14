@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Lint HTML') {
       steps {
-        sh 'tidy -q -e templates/index.html'
+        sh 'tidy -q -e /dockercatpix/flask-app/templates/index.html'
       }
 	}
     stage('Upload to AWS') {
