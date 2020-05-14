@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Lint HTML') {
       steps {
-        sh 'tidy -q -e /dockercatpix/flask-app/templates/index.html'
+        sh 'tidy -q -e flask-app/templates/index.html'
       }
 	}
     stage('Upload to AWS') {
       steps {
         withAWS(region:'us-east-2',credentials:'mromero') {
-        s3Upload(bucket: 'esri-imagery-apps', pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'index.html')
+        s3Upload(bucket: 'esri-imagery-apps', pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'flask-app/templates/index.html')
 		}
 	}
   }
