@@ -8,7 +8,7 @@ pipeline {
 	}
     stage('Upload to AWS') {
       steps {
-        withAWS(region:'us-east-2',credentials:'mromero') {
+        withAWS(region:'us-west-1',credentials:'mromero') {
         s3Upload(bucket: 'esri-imagery-apps', pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'flask-app/templates/index.html')
 		}
 	}
